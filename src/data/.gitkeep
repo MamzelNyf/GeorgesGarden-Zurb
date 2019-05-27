@@ -1,0 +1,13 @@
+Variables can also be added globally by creating an external JSON or YML file, and adding it to the src/data folder in a project. 
+Let's create a file called breakfast.yml:
+- eggs
+- bacon
+- toast
+Panini will load in the contents of this YML file as a variable called {{ breakfast }}.
+Because it's an array, we can loop through it using Handlebars's {{#each}} helper:
+<ul class="breakfast-items">
+  {{#each breakfast}}
+    <li>{{ this }}</li>
+  {{/each}}
+</ul>
+This code will print three <li>s, one for each item in the file.

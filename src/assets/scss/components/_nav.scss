@@ -1,0 +1,53 @@
+// Responsive navigation bar without js
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.sticky-container {
+  z-index: 10;
+}
+
+.top-bar {
+  background-color: rgba($secondary-color, 0.7) !important;
+  box-shadow: 1px 0 3px $dark-gray;
+
+  .menu {
+    background-color: transparent !important;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.title-bar {
+  background-color: rgba($secondary-color, 0.7) !important;
+}
+
+.logo {
+  margin: 0 !important;
+  padding: 0 !important;
+}

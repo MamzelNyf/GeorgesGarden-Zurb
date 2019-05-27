@@ -1,4 +1,4 @@
-{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+{{!-- This is the base layout for your project, and will be used on every page unless specified with--}}
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -6,13 +6,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}"/>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 <body>
 
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+{{> off-canvas}}
+<!-- In the off-canvas-content DIV goes the whole page content -->
+<div class="off-canvas-content" data-off-canvas-content>
+{{!-- Show navigation on each page except index.html --}}
+{{#unlesspage 'index'}}{{> navigation}}{{/unlesspage}}
+
 {{> body}}
+{{> footer}}
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>

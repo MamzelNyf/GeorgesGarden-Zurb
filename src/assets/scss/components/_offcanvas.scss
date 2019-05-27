@@ -1,0 +1,66 @@
+// To darken the background when the menu is overlaping
+.js-off-canvas-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.off-canvas {
+  background: lighten(rgba($secondary-color, 0.8), 10%) !important;
+  width: 100vw !important;
+
+  @include breakpoint(medium) {
+    width: 300px !important;
+  }
+
+  a {
+    margin: 1.2rem;
+  }
+}
+
+.shopping-cart-button {
+  padding: 1rem;
+  background-color: get-color(tertiary);
+  float: right;
+  height: 100%;
+  box-shadow: 1px 0 3px #8a8a8a;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(get-color(tertiary), 10%)
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+
+}
+
+.shopping-title {
+  text-align: center;
+  padding: 1.4rem;
+  background-color: get-color(tertiary);
+  margin-bottom: 15px;
+}
+
+.shopping-cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 5px;
+
+  img {
+    height: 8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $white;
+    padding-right: 20px;
+  }
+}
+
+.close-button {
+  color: $secondary-color;
+  right: 1.5rem;
+  top: 1.2rem;
+}

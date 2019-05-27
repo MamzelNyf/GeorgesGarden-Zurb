@@ -1,0 +1,27 @@
+.responsive-blog-footer {
+  background: $secondary-color;
+  padding: 3rem 3rem;
+  color: white;
+
+  .mailing-list {
+    margin-bottom: 1.5rem;
+  }
+
+  .mailing-container {
+    margin-bottom: 2rem;
+  }
+
+  .about-section,
+  .tag-section {
+    margin-bottom: 2rem;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .fa-chevron-circle-up {
+    font-size: 3rem;
+    color: $white;
+  }
+}

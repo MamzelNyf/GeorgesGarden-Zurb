@@ -1,0 +1,80 @@
+.tabs {
+    img {
+        width: 4rem;
+
+        @include breakpoint(medium) {
+            width: 5rem;
+        }
+
+        @include breakpoint(large) {
+            width: 6rem;
+        }
+    }
+
+    span {
+        display: block;
+        margin: 15px 0;
+    }
+}
+
+.tabs-title {
+    width: 25%;
+
+    >a {
+        padding: 0.4rem !important;
+        background-color: lighten(get-color(tertiary), 100%);
+        transition: 0.3s;
+
+        @include breakpoint(medium) {
+            font-size: 1em;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+            -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+            box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+            ;
+            transition: box-shadow 0.5s, background-color 0.25s ease-in-out;
+
+        }
+    }
+
+    >a:focus,
+    a[aria-selected='true'] {
+        background-color: lighten(get-color(tertiary), 10%);
+    }
+}
+
+.tabs-panel {
+    background-color: lighten(get-color(tertiary), 25%);
+
+    .callout img {
+        width: 50vw;
+
+        @include breakpoint(medium) {
+            width: auto;
+        }
+    }
+
+}
+
+.reveal img {
+    height: 90vh;
+    object-fit: contain;
+}
+
+.fadein img {
+    opacity: 0;
+    @include mui-animation(fade(in));
+    animation-duration: 1s;
+    // object stay on its last state after the animation, here opacity 100%
+    animation-fill-mode: forwards;
+}
+
+// Make the animation on each img in the each div of the componant with .fadein class starting with a delay on 0.2s  
+@for $i from 1 through 10 {
+    .fadein div:nth-of-type(#{$i}) img {
+        -webkit-animation-delay:(#{$i*0.2s});
+        animation-delay:(#{$i*0.2s});
+    }
+}

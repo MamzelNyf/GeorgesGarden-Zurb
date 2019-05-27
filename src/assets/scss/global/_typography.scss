@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Halimun';
+    src: url("../fonts/Halimun.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Hairline';
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+
+p {
+    color: $primary-color;
+}
+
+h2 {
+    color: $primary-color;
+}
+
+h4 {
+    @media screen and (max-width: 39.9375em) {
+        font-size: 1.5rem;
+    }
+}

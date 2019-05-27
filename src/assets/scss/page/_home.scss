@@ -1,0 +1,120 @@
+.fullscreen-image-slider {
+  position:absolute;
+    .orbit-image {
+      width:100%;
+      height:100vh;
+      opacity: 0.8;
+      //object-fit helps to cover a div with an img includes in the HTML, helps when the height is most important
+      object-fit: cover;
+    }
+  
+    .orbit-caption {
+      text-align: right;
+      font-size: 0.8em;
+      font-family: 'Montserrat';
+      font-weight:100;
+      background-color: rgba($black, 0.6)
+    }
+  }
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  position: relative;
+
+  .middle-content-section {
+    text-align: center;
+    color: $white;
+    margin-bottom: 20%; 
+    .title-mobile{
+      margin-bottom: 110%;
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+    }
+    h1{
+      background-color:rgba($white,0.5);
+      padding:5px;
+      @include breakpoint(medium) {
+        border-radius: 5px;
+        background-color:rgba($white,0.3);
+        padding:10px;
+      }
+    }
+  }
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+
+    .fa-chevron-circle-down {
+      font-size: 3rem;
+      color: $white;
+    }
+  }
+}
+.content-cite{
+  color: $primary-color;
+  font-family: 'Hairline', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 2rem;
+  margin: 100px 0;
+  span{
+    color:$secondary-color;
+  }
+}
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+  
+    .content-section-img {
+      align-self: center;
+      flex: 1 0 100%;
+      background-color: lighten(get-color(tertiary), 10%) ;
+  
+      img {
+        width: 100%;
+      }
+  
+      @media screen and (min-width: 40em) {
+        flex: 1 0 50%;
+      }
+
+      .responsive-embed, 
+      .flex-video{
+        margin-bottom:0;
+      }
+    }
+  
+    .content-section-block {
+      padding: 1rem;
+      flex: 1 0 100%;
+      align-self: stretch;
+      background: lighten(get-color(tertiary), 10%) ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  
+      @media screen and (min-width: 40em) {
+        flex: 1 0 50%;
+        padding: 2rem;
+      }
+    }
+  }
+  
+  .content-section-block-header {
+    font-size: 2rem;
+  }
+  
+  .content-section-block-subheader {
+    font-size: 0.8rem;
+    color:$black;
+  }
+  
+  
