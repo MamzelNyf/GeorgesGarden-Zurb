@@ -1,0 +1,401 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop your products</title>
+    <meta name="description" content="Find all you need to grow your garden, flowers, seeds, tools"/>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+<body>
+
+<!-- OFF CANVAS ASIDE ================================================================================================================================================ -->
+<aside class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+    <!-- SHOPPING CARD -->
+    <div class="grid-container-fluid">
+        <div class="grid-x ">
+            <div class="cell expanded shopping-title">ITEMS IN CART</div>
+            <div class="cell ">
+                <a>Wild Flower</a>
+                <div class="shopping-cart-item align-center-middle">
+                    <img src="assets/img/flower(1).jpg" alt="Flower - Picture by Fanny LEFERT">
+                    <div>
+                        <p><span>Qty: </span>1</p>
+                        <p><span>Price </span>$20</p>
+                        <a href="#"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
+                <a>Wild Flower</a>
+                <div class="shopping-cart-item">
+                    <img src="assets/img/flower(4).jpg" alt="Flower - Picture by Fanny LEFERT">
+                    <div>
+                        <p><span>Qty: </span>1</p>
+                        <p><span>Price </span>$20</p>
+                        <a href="#"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
+                <a>Wild Flower</a>
+                <div class="shopping-cart-item">
+                    <img src="assets/img/flower(2).jpg" alt="Flower - Picture by Fanny LEFERT">
+                    <div>
+                        <p><span>Qty: </span>1</p>
+                        <p><span>Price </span>$20</p>
+                        <a href="#"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="button float-right">Finish your order</a>
+                <!-- END OF SHOPPING CART -->
+                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- END OFF CANVAS ASIDE ================================================================================================================================================ --><!-- In the off-canvas-content DIV goes the whole page content -->
+<div class="off-canvas-content" data-off-canvas-content>
+    <!-- BEGINNING NAVBAR -->
+    <!--Mobile Navbar-->
+    <div data-sticky-container class="top-content-section" id="#top">
+        <div data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+            <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+                <div class="grid-x align-middle align-justify">
+                    <div class="cell shrink"><button class="menu-icon" type="button" data-toggle="main-menu"></button>
+                    </div>
+                    <div class="cell small-7"><a href="index.html" class="logo"><img src="assets/img/GG.png" alt="logo"></a>
+                    </div>
+                    <div class="cell shrink text-center">
+                        <a data-toggle="offCanvas"> <span><i class="fa fa-shopping-cart"></i></span><br>Cart(0)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell auto">
+                    <div class="top-bar" id="main-menu">
+                        <div class="top-bar-left">
+                            <ul class="vertical medium-horizontal dropdown menu"
+                                data-responsive-menu="accordion medium-dropdown">
+                                <li><a href="index.html" class="logo"><img src="assets/img/GG.png" width="150" alt="logo"
+                                            class="hide-for-small-only"></a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu">
+                                <li><input type="text" placeholder="Looking for a flower?"></li>
+                                <li><button class="button">Search</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell shrink hide-for-small-only">
+                    <button type="button" class="shopping-cart-button" data-toggle="offCanvas">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text">Cart (3)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV BAR -->
+
+<!--SHOPPING LIST CONTENT SECTION -->
+<div class="shop-section grid-x grid-padding-x">
+        <div class="cell">
+            <nav aria-label="You are here:">
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <span class="show-for-sr">Current: </span> shop
+                    </li>
+                </ul>
+            </nav>
+        </div>    <div class="cell"><h1>Shop for your garden</h1></div>
+    <!-- LIST PRODUCTS -->
+    <div class="grid-x grid-margin-x grid-padding-y text-center">
+        <div class="cell align-center">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                <li class="tabs-title is-active"><a href="#panel1c"><img src="assets/img/svg/006-flower.svg"
+                            alt="Flower icon - Icon made by https://www.freepik.com/ from www.flaticon.com "><span>Flower
+                            seeds</span></a></li>
+                <li class="tabs-title"><a href="#panel2c"><img src="assets/img/svg/007-shovel.svg"
+                            alt="Flower icon - Icon made by https://www.freepik.com/ from www.flaticon.com "><span>Garden
+                            Tools</span></a></li>
+                <li class="tabs-title"><a href="#panel3c"><img src="assets/img/svg/003-sprout.svg"
+                            alt="Flower icon - Icon made by https://www.freepik.com/ from www.flaticon.com "><span>Veggie
+                            Patch</span></a></li>
+                <li class="tabs-title"><a href="#panel4c"><img src="assets/img/svg/004-fertilizer.svg"
+                            alt="Flower icon - Icon made by https://www.freepik.com/ from www.flaticon.com "><span>Soil
+                            Nutrients</span></a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                <div class="tabs-panel is-active" id="panel1c">
+                    <h2>Flowers and Seeds</h2>
+                    <div class="grid-x grid-padding-x medium-up-3 large-up-5 text-center fadein">
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(1).jpg "data-open="pop-up-img"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                            <div class="reveal" id="pop-up-img" data-reveal>
+                                <img src="assets/img/flower(1).jpg "
+                                alt="Flower - Picture by Fanny LEFERT">
+                                <button class="close-button" data-close aria-label="Close modal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(2).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(3).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(4).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(5).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(6).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(7).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(8).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(9).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/flower(10).jpg"
+                                alt="Flower - Picture by Fanny LEFERT">
+                            <h5>Wild Flower</h5>
+                            <p>20 seeds</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-panel" id="panel2c">
+                    <h2>Garden Tools</h2>
+                    <div class="grid-x grid-padding-x medium-up-3 large-up-5 text-center fadein">
+                        <div class="cell">
+                            <img class="callout" src="assets/img/tool(1).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/tool(2).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/tool(3).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/tool(4).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/tool(5).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs-panel" id="panel3c">
+                    <h2>Flower, seeds and plants</h2>
+                    <div class="grid-x grid-padding-x medium-up-3 large-up-5 text-center fadein">
+                        <div class="cell">
+                            <img class="callout" src="assets/img/veggie(1).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/veggie(2).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/veggie(3).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/veggie(4).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/veggie(5).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-panel" id="panel4c">
+                    <div class="grid-x grid-padding-x medium-up-3 large-up-5 text-center fadein">
+                        <div class="cell">
+                            <img class="callout" src="assets/img/soil(1).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/soil(2).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/soil(3).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/soil(4).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                        <div class="cell">
+                            <img class="callout" src="assets/img/soil(5).jpg"
+                                alt="Tool - Picture from Pixabay">
+                            <h5>Title</h5>
+                            <p>Description</p>
+                            <p>$20</p>
+                            <a href="#" class="button small expanded hollow">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MIDDLE SECTION -->
+<!-- FOOTER SECTION  -->
+<footer class="responsive-blog-footer">
+    <div class="grid-x grid-padding-x">
+        <div class="large-3 cell hide-for-small-only about-section">
+            <img src="assets/img/crop.jpg" alt="Picture - Pixabay" />
+        </div>
+        <div class="large-6 cell about-section">
+            <h4> About Georges Garden website</h4>
+            <p>This website has been created with Foundation 6 for a Complex UX design assessment, Web development
+                Diploma 2019, Tafe North
+                Metropolitan</p>
+            <a href="">Read More</a>
+        </div>
+        <div class="large-3 cell mailing-container">
+            <h4 class="mailing-list">Join my mailing list</h4>
+            <input type="text" placeholder="Email Address">
+            <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
+        </div>
+    </div>
+    <div class="grid-x  align-justify">
+        <p>copyright @MamzelNyf - all rights reserved</p>
+        <div class="up-argrid-x">
+            <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+</div>
+<!-- END OFF-CANVAS CONTENT -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
