@@ -101,7 +101,7 @@
           <div data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
               <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
                   <div class="grid-x align-middle align-justify">
-                      <div class="cell shrink"><button class="menu-icon" type="button" data-toggle="main-menu"></button>
+                      <div class="cell shrink"><button class="menu-icon" type="button" data-toggle="main-menu"><span class="show-for-sr">Menu</span></button>
                       </div>
                       <div class="cell small-7"><a href="index.html" class="logo"><img src="assets/img/GG.png" alt="logo"></a>
                       </div>
@@ -125,7 +125,7 @@
                           </div>
                           <div class="top-bar-right">
                               <ul class="menu">
-                                  <li><input type="text" placeholder="Looking for a flower?"></li>
+                                  <li><label for="search" class="show-for-sr">Search box</label><input id="search" type="text" placeholder="Looking for a flower?"></li>
                                   <li><button class="button">Search</button></li>
                               </ul>
                           </div>
@@ -148,15 +148,15 @@
   </div>
   <div class="bottom-content-section hide-for-small-only" data-magellan data-threshold="0">
     <a href="#main-content-section">
-      <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+      <i class="fa fa-chevron-circle-down" aria-hidden="true"></i><span class="show-for-sr">Down</span>
     </a>
   </div>
 </div>
 <div class="grid-container" id="main-content-section">
   <div class="grid-x grid-margin-x grid-padding-x grid-padding-y align-center-middle">
     <div class="medium-6 text-center content-cite">
-      <span>"</span>Gardening is medicine <br>that does not need a prescription <br>and has no limit on
-      dosage.<span>"</span>
+      <p>Gardening is medicine <br>that does not need a prescription <br>and has no limit on
+        dosage.</p>
     </div>
   </div>
 </div>
@@ -197,18 +197,18 @@
             <p>This website has been created with Foundation 6 for a Complex UX design assessment, Web development
                 Diploma 2019, Tafe North
                 Metropolitan</p>
-            <a href="">Read More</a>
+            <a class="button hollow" href="#">Read More</a>
         </div>
         <div class="large-3 cell mailing-container">
             <h4 class="mailing-list">Join my mailing list</h4>
-            <input type="text" placeholder="Email Address">
+            <label for="mailing" class="show-for-sr">Mail subscription</label><input id="mailing" type="text" placeholder="Email Address">
             <a class="button expanded subscribe-button" href="#">Subscribe Now</a>
         </div>
     </div>
     <div class="grid-x  align-justify">
         <p>copyright @MamzelNyf - all rights reserved</p>
         <div class="up-argrid-x">
-            <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+            <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i><span class="show-for-sr">Top</span></a>
         </div>
     </div>
 </footer>

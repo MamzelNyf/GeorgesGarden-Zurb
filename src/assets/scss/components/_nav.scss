@@ -22,7 +22,7 @@
 }
 
 .top-bar {
-  background-color: rgba($secondary-color, 0.7) !important;
+  background-color: rgba($secondary-color, 0.9) !important;
   box-shadow: 1px 0 3px $dark-gray;
 
   .menu {
@@ -32,22 +32,21 @@
       display: flex;
       align-items: center;
     }
-
-    a {
-      color: $white;
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
   }
 }
 
 .title-bar {
-  background-color: rgba($secondary-color, 0.7) !important;
+  background-color: rgba($secondary-color, 0.9) !important;
 }
 
 .logo {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.menu-icon span{
+  font-size: 0.8rem;
+  color:$white;
+  position:relative;
+  top:20px;
 }

@@ -70,7 +70,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #154018,
-  secondary: #588C5C,
+  secondary: #79ab7d,
   tertiary: #ffcc4c,
   success: #3adb76,
   warning: #ffae00,
@@ -827,8 +827,8 @@ $titlebar-background: $black;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color: $black;
+$titlebar-icon-color-hover: $white;
 $titlebar-icon-spacing: 0.25rem;
 
 // 54. Tooltip

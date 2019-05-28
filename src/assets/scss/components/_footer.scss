@@ -1,6 +1,6 @@
 .responsive-blog-footer {
   background: $secondary-color;
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   color: white;
 
   .mailing-list {
@@ -14,14 +14,13 @@
   .about-section,
   .tag-section {
     margin-bottom: 2rem;
-
-    a {
-      color: $white;
-    }
   }
-
   .fa-chevron-circle-up {
     font-size: 3rem;
-    color: $white;
+    color: $white;  }
+  span{
+    display:block;
+    text-align: center;
+    color:$white;
   }
-}
+} 
